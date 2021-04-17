@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="213dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="133dp"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/sign_up_now"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/signg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="142dp"
+        android:layout_marginBottom="191dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="159dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginBottom="37dp"
+        android:text="@string/otp_auth"
+        app:backgroundTint="#090909"
+        app:layout_constraintBottom_toTopOf="@+id/signg"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/snd"
+        android:layout_width="155dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginBottom="29dp"
+        android:text="@string/email_auth"
+        app:backgroundTint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/button1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

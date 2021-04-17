@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">SignUp</string>
+    <string name="sign_up_now">Sign Up Now</string>
+    <string name="sign_in">Sign In</string>
+    <string name="you_have_successfully_signed_up">You have successfully signed up</string>
+    <string name="otp_auth">OTP auth</string>
+    <string name="email_auth">Email Auth</string>
+    <string name="get_otp">Get OTP</string>
+
+    <string name="verify_otp">Verify OTP</string>
+    <string name="enter_your_phone">Enter your phone</string>
+
+    <string name="otp_auth2">OTP Auth</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="choose_country">Choose Country</string>
+    <string name="enter_your_no_with_countrycode">Enter your no with countrycode</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="verify">Verify</string>
+    <string name="verify_your_otp_here">Verify Your OTP here</string>
+    <string name="signout">SignOut</string>
+</resources>
