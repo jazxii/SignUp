@@ -1,5 +1,6 @@
 package com.example.signup
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -7,18 +8,23 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.DatabaseReference
 import com.google.firebase.ktx.Firebase
 
 class MainActivity2 : AppCompatActivity() {
+    lateinit var mDatabase : DatabaseReference
+    var mAuth = FirebaseAuth.getInstance()
+    var user = FirebaseAuth.getInstance().currentUser
 
     private val auth: FirebaseAuth = FirebaseAuth.getInstance()
+    @SuppressLint("CutPasteId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
         val user = Firebase.auth.currentUser
         user?.let {
             // Name, email address, and profile photo Url
-            val name = user.displayName
+            val nameee = user.displayName
             val email = user.email
             val photoUrl = user.photoUrl
 
@@ -33,6 +39,9 @@ class MainActivity2 : AppCompatActivity() {
         val resultTextView: TextView = findViewById(R.id.textView3)
         resultTextView.text =user.displayName
 
+        val resultTextView2: TextView = findViewById(R.id.textView10)
+        resultTextView2.text =user.email
+
         val nam = intent.getStringExtra("nameo")
         val r2:TextView =findViewById(R.id.textView6)
         r2.text=nam
@@ -40,7 +49,7 @@ class MainActivity2 : AppCompatActivity() {
         val signor: Button= findViewById(R.id.signout)
         signor.setOnClickListener {
             Firebase.auth.signOut()
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, home::class.java)
             startActivity(intent)
         }
 

@@ -26,4 +26,14 @@
     <string name="or">OR</string>
     <string name="ieee_logo">IEEE logo</string>
     <string name="no_account_sign_up_now">No Account? Sign Up Now</string>
+    <string name="register">REGISTER</string>
+    <string name="register1">Register</string>
+    <string name="sign_in1">SIGN IN</string>
+    <string name="welcome">WELCOME</string>
+    <string name="siign_out">SIign Out</string>
+    <string name="signin_otp">SignIN - OTP</string>
+    <string name="enter_ph_number">Enter Ph Number</string>
+    <string name="verifying_otp">Verifying OTP</string>
+    <string name="enter_otp_here">Enter OTP here</string>
+    <string name="name">Name</string>
 </resources>

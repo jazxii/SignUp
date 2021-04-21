@@ -6,7 +6,10 @@
         <item>@font/alegreya_sc_bold_italic</item>
         <item>@font/alegreya_sc_italic</item>
         <item>@font/bangers</item>
+        <item>@font/calligraffitti</item>
+        <item>@font/hanalei</item>
         <item>@font/lato_italic</item>
+        <item>@font/mclaren</item>
         <item>@font/open_sans_semibold</item>
     </array>
 </resources>
