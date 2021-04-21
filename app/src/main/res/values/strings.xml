@@ -19,4 +19,11 @@
     <string name="verify">Verify</string>
     <string name="verify_your_otp_here">Verify Your OTP here</string>
     <string name="signout">SignOut</string>
+    <string name="phone_sign_in">PHONE Sign-In</string>
+    <string name="login">LOGIN</string>
+    <string name="password">password</string>
+    <string name="email_adresss">email adresss</string>
+    <string name="or">OR</string>
+    <string name="ieee_logo">IEEE logo</string>
+    <string name="no_account_sign_up_now">No Account? Sign Up Now</string>
 </resources>
