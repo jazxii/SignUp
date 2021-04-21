@@ -13,12 +13,14 @@
         android:layout_height="61dp"
         android:layout_marginStart="120dp"
         android:layout_marginTop="12dp"
+        android:layout_marginEnd="121dp"
         android:fontFamily="@font/open_sans_semibold"
         android:text="@string/sign_in1"
         android:textAlignment="center"
         android:textColor="#FF1372"
         android:textSize="40sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -28,6 +30,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="142dp"
         android:layout_marginTop="7dp"
+        android:layout_marginEnd="142dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button1"
         tools:ignore="MissingConstraints" />
@@ -38,9 +42,11 @@
         android:layout_height="52dp"
         android:layout_marginStart="120dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="121dp"
         android:text="@string/phone_sign_in"
         app:backgroundTint="#231539"
         app:cornerRadius="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
@@ -50,23 +56,28 @@
         android:layout_height="47dp"
         android:layout_marginStart="123dp"
         android:layout_marginTop="19dp"
+        android:layout_marginEnd="123dp"
         android:text="@string/login"
         app:backgroundTint="#231539"
         app:cornerRadius="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passwordText" />
 
     <EditText
         android:id="@+id/emailText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="95dp"
+        android:layout_width="217dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="101dp"
         android:layout_marginTop="28dp"
+        android:layout_marginEnd="103dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/email_adresss"
         android:inputType="textEmailAddress"
         android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -76,11 +87,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="98dp"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="100dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
         android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailText" />
 
@@ -90,9 +103,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="196dp"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="197dp"
         android:text="@string/or"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/snd" />
 
@@ -102,7 +117,9 @@
         android:layout_height="107dp"
         android:layout_marginStart="132dp"
         android:layout_marginTop="60dp"
+        android:layout_marginEnd="130dp"
         android:contentDescription="@string/ieee_logo"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/main_logo_ieee" />
@@ -113,9 +130,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="94dp"
         android:layout_marginTop="19dp"
+        android:layout_marginEnd="95dp"
         android:text="@string/no_account_sign_up_now"
         android:textColor="#FF1262"
         app:backgroundTint="#140C21"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signg" />
 
