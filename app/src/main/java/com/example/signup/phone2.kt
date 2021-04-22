@@ -86,10 +86,12 @@ class phone2 : AppCompatActivity() {
                 this,
                 OnCompleteListener<AuthResult?> { task ->
                     if (task.isSuccessful) {
+                        val mobileNumber = intent.getStringExtra("mobileNumber")
                         //verification successful we will start the profile activity
                         Toast.makeText(this,"Success", Toast.LENGTH_LONG).show()
                         val i = Intent(this, MainActivity2::class.java).apply {
                             putExtra("nameo", name)
+                            putExtra("num", mobileNumber)
                         }
                         startActivity(i)
 
