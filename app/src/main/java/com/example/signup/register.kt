@@ -46,7 +46,7 @@ class register : AppCompatActivity() {
                 if (task.isSuccessful) {
                     val user = mAuth.currentUser
                     val uid = user!!.uid
-                    mDatabase.child(uid).child("Name").setValue(name)
+                    mDatabase.child(uid).child("users/$uid/name").setValue(name)
                     startActivity(Intent(this, MainActivity2::class.java))
                     Toast.makeText(this, "Successfully registered :)", Toast.LENGTH_LONG).show()
                 }else {

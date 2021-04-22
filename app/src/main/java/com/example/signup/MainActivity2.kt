@@ -49,9 +49,9 @@ class MainActivity2 : AppCompatActivity() {
 
         var uid = user!!.uid
 
-        mDatabase = FirebaseDatabase.getInstance().getReference("Names")
+        mDatabase = FirebaseDatabase.getInstance().getReference("users/$uid/name")
 
-        mDatabase.child(uid).child("Name").addValueEventListener( object : ValueEventListener {
+        mDatabase.child(uid).child("users/$uid/Name").addValueEventListener( object : ValueEventListener {
             override fun onCancelled(error: DatabaseError) {
                 TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
             }
