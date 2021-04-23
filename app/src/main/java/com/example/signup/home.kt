@@ -31,7 +31,6 @@ class home : AppCompatActivity() {
     lateinit var googleSignInClient: GoogleSignInClient
     private val RC_SIGN_IN: Int = 0
     private fun updateUI(user: FirebaseUser?) {
-
     }
 
     private fun firebaseAuthWithGoogle(idToken: String) {

@@ -17,8 +17,6 @@ class MainActivity2 : AppCompatActivity() {
     var mAuth = FirebaseAuth.getInstance()
     var user = FirebaseAuth.getInstance().currentUser
 
-
-
     private val auth: FirebaseAuth = FirebaseAuth.getInstance()
     @SuppressLint("CutPasteId")
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -29,7 +29,6 @@ class register : AppCompatActivity() {
         registerBtn.setOnClickListener(View.OnClickListener {
         registerUser()
         })
-
     }
 
     private fun registerUser () {

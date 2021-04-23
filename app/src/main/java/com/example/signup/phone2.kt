@@ -51,7 +51,6 @@ class phone2 : AppCompatActivity() {
                     verifyVerificationCode(code)
                 }
             }
-
             override fun onVerificationFailed(e: FirebaseException) {
                 // This callback is invoked in an invalid request for verification is made,
                 // for instance if the the phone number format is not valid.
